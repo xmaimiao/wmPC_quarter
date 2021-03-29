@@ -1,0 +1,144 @@
+test_save_success:
+  - { quarter_name: "情商测试题国际标准10题",  }
+
+test_save_success_for_next:
+  - { quarter_name: "情商测试题国际标准10题",
+      subject_name1: "生活中的你时常感觉到厌倦？",
+      option_list1: [ { item: "是的 ", is_img: False,is_other: False,tips: { switch: False,option_tips: "(跳转到第2题)" } },
+                      { item: "不是 ", is_img: False,is_other: False,tips: { switch: False,option_tips: "(跳转到第3题)" } } ,
+                      { item: "偶尔 ", is_img: False,is_other: False,tips: { switch: False,option_tips: "(跳转到第4题)" } } , ],
+  }
+
+test_creat_quarter_base:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       quarter_name: "旅游调查",
+       quarter_remark: "您好，我们是XXX，我们正在进行一项关于旅游的调查，想邀请您用几分钟时间帮忙填答这份问卷。本问卷实行匿名制，所有数据只用于统计分析， 请您放心填写。题目选项无对错之分，请您按自己的实际情况填写。谢谢您的帮助！",
+       subject_name1: "请问您最近3个月是否有出游计划？",
+       option_list1: [ { item: "是", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "否", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } , ],
+       subject_name2: "请问您计划什么时间旅游？",
+       option_list2: [ { item: "周末", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "节假日", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "平时", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "其他", is_img: False,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} }  ],
+       subject_name3: "请问您这次出行的原因是？",
+       option_list3: [ { item: "公务出差", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "家庭外出", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "单位奖励旅游", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "探亲", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "其他", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name4: "请问您打算去哪里旅游？",
+       option_list4: [ { item: "国外游", is_img: False,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "国内游", is_img: False,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name5: "下面哪个流类属于面向字符的输入流？（ ）",
+       option_list5: [ { item: "BufferedWrite", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "FileInputStream", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "ObjectInputStream", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "InputStreamReader", is_img: False,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name6: "struts框架中，使用以下（ ）标签可以显示数据验证错误信息。",
+       option_list6: [ { item: "html:error/", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "html:errors/", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "logic:error/", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "logic:errors/", is_img: False,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name7: "ArrayList list = new ArrayList(20);中的list扩充几次（ ）？",
+       option_list7: [ { item: "0", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "1", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "2", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "3", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name8: "下面描述错误的是（ ）？",
+       option_list8: [ { item: "子类的成员变量能与其父类的成员变量同名。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "break语句在switch结构中是必须的.", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "UDP是面向无连接的网络连接。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "Hashtable是同步的，而HashMap不是同步的。所以不要求同步的时候，用HashMap的效率较高。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name9: "对XML文档的描述，错误的是（ ）？",
+       option_list9: [ { item: "代码得到编译，并输出“s=”", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "代码得到编译，并输出“s=null”", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "代码不能编译通过", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "代码得到编译，但捕获到 NullPointException异常", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name10: "下面代码输出结果是（ ）？import java.io.*;import java.util.*;public class foo{ public static void main (String[] args){String s; System.out.println(s= + s);}}",
+       option_list10: [ { item: "XML 文档必须有根元素", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "XML 的属性值须加引号", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "XML 标签对大小写不敏感", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "所有 XML 元素都须有关闭标签", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+
+       subjective_name1: "请使用三目运算符描述以下代码：If(a0){B=1;}eles{B=2;}",
+       tips1: { switch: False, text: "舉例説明" },
+       words1: { switch: True, text: 50},
+
+       subjective_name2: "写出下面程序的执行结果class HelloA { public HelloA() { System.out.println( HelloA ); } { System.out.println( Im A class ); } static { System.out.println( static A ); }}public class HelloB extends HelloA { public HelloB() { System.out.println( HelloB ); } { System.out.println( Im B class ); } static { System.out.println( static B ); } public static void main( String[] args ) { 　　　　new HelloB(); }}",
+       tips2: { switch: False, text: "舉例説明" },
+       words2: { switch: False, text: 100 },
+
+       subjective_name3: "改错题计算 1/1+1/2+1/3+...+1/100 的值-------------------------------------------------------*/public class Prog1{public static void main( String args[ ]) { int sum=0.0; for(int i=1; i100; i++) sum+=1/i; System.out.println( sum=,sum ); }}",
+       tips3: { switch: False, text: "舉例説明" },
+       words3: { switch: False, text: 100 },
+
+       subjective_name4: "数据库查询现有如下两个数据表，请按要求写出SQL语句（避免子查询） 政党表（政党ID、政党名称、党员人数、纲领摘要） 议员表（议员ID、姓名、性别、年龄、政党ID）获取所有政党的议员情况，包括政党名称、党员人数、议员人数，按议员数排倒序",
+       tips4: { switch: False, text: "舉例説明" },
+       words4: { switch: False, text: 100 },
+
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "test401,test402,test500,test501,test502" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       group_list: ["大學基金會2",],
+       range_s: { input: True,
+                  staffNo: False,
+                  staff: "1709853ta011001,1709853ub011006,1709853ub211001,1709853upa11001" },
+       student_multi_cond: {
+           college: { switch: True,value: [ "中醫藥學院", ] },
+           major: { switch: True,value: [ "工商管理學士學位", ], },
+           program: { switch: True,value: [ "工商管理學士學位", ] },
+           term: { switch: True,value: [ "1909", ] },
+           student_type: { switch: True,value: [ "本科", ] },
+           student_status: { switch: True,value: [ "在讀生-ACTIVE", "已轉系生-CHANGED", ] },
+           acco_type: { switch: True,value: [ "住宿生", ] },
+       },
+       excel_path_s: D:\PycharmProjects\wmPC_quarter\excel\staff_user_s.slxs,
+       outsider_path: D:\PycharmProjects\wmPC_quarter\excel\outsider_import_template2,
+       admin: ["test402","test500"],
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2021-01-20",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" },
+   }
+
+test_get_publish_setting_for_name:
+  - { quarter_name: "旅游调查全部師生，外部人員0",}
+
+test_edit_publish_setting:
+    - { keys:{quarter_type: "全部",quarter_name: "2021/01/22旅游调查教師部門，外部人員430",},
+        quarter_type: { type1: "限定人群", type2: "不限人群" },
+        range_t: { input: True, staffNo: False, staff: "test401,test402" },
+        excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+        group_list: [ "酒店與旅遊管理學院","大學校董會", ],
+        range_s: {
+          input: True, staffNo: False,
+          staff: "1709853ta011001,1709853ub011006,1709853ub211001,1709853upa11001" },
+
+        student_multi_cond: {
+          college: { switch: True,value: [ "中醫藥學院",] },
+          major: { switch: True,value: [ "工商管理學士學位",],},
+          program: { switch: True,value: [ "工商管理學士學位", ] },
+          term: { switch: True,value: [ "1809",] },
+          student_type: { switch: True,value: [ "本科", ] },
+          student_status: { switch: True,value: [ "在讀生-ACTIVE", "已轉系生-CHANGED",] },
+          acco_type: { switch: True,value: [ "住宿生", ] },
+        },
+
+        excel_path_s: D:\PycharmProjects\wmPC_quarter\excel\staff_user_s.slxs,
+        outsider_path: D:\PycharmProjects\wmPC_quarter\excel\outsider_import_template2,
+        admin: { staffNo: False, staff: "test401" },
+      #    日期和時間寫在引號中，否則可能出錯
+        startdate: "2020-12-22",
+        starttime: "08:30",
+        enddate: "2021-01-20",
+        endtime: "15:00",
+        cycle: { cycle1: "每天", cycle2: "僅一次" },}
+
+
+

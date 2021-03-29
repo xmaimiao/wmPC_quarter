@@ -1,0 +1,114 @@
+search_input:
+  - by: xpath
+    locator: '//*[@class="ivu-input ivu-input-default"]'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="ivu-input ivu-input-default"]'
+    action: send
+    value: ${quarter_name}
+#點擊查詢ICON
+  - by: xpath
+    locator: '//*[@class="ivu-icon ivu-icon-ios-search"]'
+    action: click
+
+click_advanced_search:
+  - by: xpath
+    locator: '//*[@class="handle-text ml-10"]'
+    action: click
+
+startTime:
+  - by: xpath
+    locator: document.getElementsByClassName('ivu-input ivu-input-default ivu-input-with-suffix')[0].value="2020/1/12"
+    action: execute_js
+
+endStartTime:
+  - by: xpath
+    locator: document.getElementsByClassName('ivu-input ivu-input-default ivu-input-with-suffix')[1].value="2020/1/12"
+    action: execute_js
+
+startPlanExpireTime:
+  - by: xpath
+    locator: document.getElementsByClassName('ivu-input ivu-input-default ivu-input-with-suffix')[2].value="2020/1/12"
+    action: execute_js
+
+endPlanExpireTime:
+  - by: xpath
+    locator: document.getElementsByClassName('ivu-input ivu-input-default ivu-input-with-suffix')[3].value="2020/1/12"
+    action: execute_js
+
+startFinishedNumber:
+  - by: xpath
+    locator: '//*[contains(text(),"回收數量")]/../../div[2]/div[3]/div/div[1]//input'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"回收數量")]/../../div[2]/div[3]/div/div[1]//input'
+    action: send
+    value: ${startFinishedNumber}
+
+endFinishedNumber:
+  - by: xpath
+    locator: '//*[contains(text(),"回收數量"")]/../../div[2]/div[3]/div/div[2]//input'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"回收數量"")]/../../div[2]/div[3]/div/div[2]//input'
+    action: send
+    value: ${endFinishedNumber}
+
+title:
+#定位到問卷名稱input框
+  - by: xpath
+    locator: '//div[contains(text(),"問卷名稱")]/../../div[2]/div[1]//input'
+    action: clear
+  - by: xpath
+    locator: '//div[contains(text(),"問卷名稱")]/../../div[2]/div[1]//input'
+    action: send
+    value: ${title}
+
+frequency:
+#点击展开icon
+  - by: xpath
+    locator: '//div[contains(text(),"問卷名稱")]/../../div[2]/div[3]//i'
+    action: click
+  - by: xpath
+    locator: '//*[contains(text(),"${frequency}") and @class="ivu-select-item"]'
+    action: click
+
+status:
+#点击展开icon
+  - by: xpath
+    locator: '//div[contains(text(),"問卷狀態")]/../../div[2]/div[1]//i'
+    action: click
+  - by: xpath
+    locator: '//*[contains(text(),"${status}") and @class="ivu-select-item"]'
+    action: click
+
+peopleOriented:
+#点击展开icon
+  - by: xpath
+    locator: '//div[contains(text(),"電話/郵箱")]/../../div[2]/div[3]//i'
+    action: click
+  - by: xpath
+    locator: '//*[contains(text(),"${peopleOriented}") and @class="ivu-select-item"]'
+    action: click
+
+click_search:
+  - by: xpath
+    locator: '//*[@class="we operation ivu-btn ivu-btn-primary"]/span'
+    action: click
+
+view_the_fir:
+  - by: xpath
+    locator: '//*[contains(text(),"${quarter_name}")]/../../../../../tr[1]/td[last()]//span'
+    action: click
+
+get_quarter_name_the_fir:
+#等待數據顯示
+  - by: xpath
+    locator: '//*[@class="ivu-table-tbody"]/tr[1]/td[2]//span'
+    action: text
+
+get_quarter_status_the_fir:
+#等待數據顯示
+  - by: xpath
+    locator: '//*[@class="ivu-table-tbody"]/tr[1]/td[last()-1]/div/div/div'
+    action: text

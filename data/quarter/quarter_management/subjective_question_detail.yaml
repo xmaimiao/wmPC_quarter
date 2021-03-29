@@ -1,0 +1,34 @@
+subjective_name:
+  - by: xpath
+    locator: '//*[@class="survey-item-content-edit"]//label[text()="標題"]/../div//input'
+    action: wait
+  - by: xpath
+    locator: '//*[@class="survey-item-content-edit"]//label[text()="標題"]/../div//input'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="survey-item-content-edit"]//label[text()="標題"]/../div//input'
+    action: send
+    value: ${subjective_name}
+
+tips:
+  - by: xpath
+    locator: '//label[text()="提示信息"]/../div//input'
+    action: clear
+  - by: xpath
+    locator: '//label[text()="提示信息"]/../div//input'
+    action: send
+    value: ${tips}
+
+words:
+  - by: xpath
+    locator: '//label[text()="字數限制"]/../div//input'
+    action: clear
+  - by: xpath
+    locator: '//label[text()="字數限制"]/../div//input'
+    action: send
+    value: ${words}
+
+click_save:
+  - by: xpath
+    locator: '//*[@class="we-p-big ivu-btn ivu-btn-primary"]/span'
+    action: click

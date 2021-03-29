@@ -1,0 +1,34 @@
+goto_application:
+  -
+    by: xpath
+    locator: 5
+    action: sleep
+  -
+    by: xpath
+    locator: '//*[@class="link-button head-button hv-bright"][last()]/i'
+    action: click
+
+quit:
+  -
+    by: xpath
+    locator: '//*[@class="link-button user-info"]/span'
+    action: click
+  -
+    by: xpath
+    locator: '//*[@class="link-button user-info"]/../../div[2]//li[last()]'
+    action: click
+
+get_index_ele_fir:
+  - by: xpath
+    locator: '//*[@class="header_right"]/ul[@class="nav"]/li[2]/a/span'
+    action: text
+
+get_index_ele_sec:
+  - by: xpath
+    locator: '//*[@class="left"]/a[1]'
+    action: text
+
+get_imformation_ele_index:
+  - by: xpath
+    locator: '//*[@class="title" and contains(text(),"系統消息")]'
+    action: ele_status

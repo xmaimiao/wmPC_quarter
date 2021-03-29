@@ -1,0 +1,35 @@
+username:
+  -
+    by: id
+    locator: 'username'
+    action: click
+  -
+    by: id
+    locator: 'username'
+    action: clear
+  -
+    by: id
+    locator: 'username'
+    action: send
+    value: ${username}
+
+password:
+  -
+    by: id
+    locator: 'password'
+    action: click
+  -
+    by: id
+    locator: 'password'
+    action: clear
+  -
+    by: id
+    locator: 'password'
+    action: send
+    value: ${password}
+
+save:
+  -
+    by: name
+    locator: 'submit'
+    action: click

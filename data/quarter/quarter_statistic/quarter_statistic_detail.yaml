@@ -1,0 +1,38 @@
+view_releasedrange:
+  - by: xpath
+    locator: '//*[@class="handle-text"]'
+    action: wait
+  - by: xpath
+    locator: '//*[@class="handle-text"]'
+    action: click
+
+get_teacher_person:
+  - by: xpath
+    locator: '//*[@class="label" and contains(text(),"教職員")]/../div[2]/div/div[1]/span[2]/span'
+    action: wait_display
+
+get_teacher_group:
+  - by: xpath
+    locator: '//*[@class="label-name" and contains(text(),"部門:")]/../span[2]/span'
+    action: wait_display
+
+get_student_person:
+  - by: xpath
+    locator: '//*[@class="label" and contains(text(),"學生")]/../div[2]/div/div[1]/span[2]/span'
+    action: wait_display
+
+get_student_multi_cond:
+  - by: xpath
+#    locator: '//*[@class="group-name" and contains(text(),"多條件組合")]/../p[2]'
+    locator: '//*[@class="group-name" and contains(text(),"多條件組合")]/../span'
+    action: wait_display
+
+get_outsider:
+  - by: xpath
+    locator: '//*[@class="label" and contains(text(),"外部人員")]/../div[2]/span'
+    action: wait_display
+
+close_page:
+  - by: xpath
+    locator: '//*[@class="ivu-drawer-wrap we-drawer"]//div[@class="button-close"]/i'
+    action: click

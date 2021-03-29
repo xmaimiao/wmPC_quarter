@@ -1,0 +1,48 @@
+goto_registration:
+  -
+    by: link text
+    locator: ${application_name}
+    action: click
+
+goto_classtimetable:
+  -
+    by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: wait_click
+  -
+    by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: click
+
+goto_exam:
+  -
+    by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: wait_click
+  -
+    by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: click
+
+
+goto_leave:
+  -
+    by: xpath
+    locator: 2
+    action: sleep
+  -
+    by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: wait_click
+  -
+    by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: click
+
+goto_quarter:
+  - by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: wait_click
+  - by: xpath
+    locator: '//*[contains(text(),"${application}")]'
+    action: click

@@ -1,0 +1,12 @@
+click_next:
+  - by: xpath
+    locator: '//*[@class="step-buttons"]//*[contains(text(),"下一步")]'
+    action: wait_cliak
+  - by: xpath
+    locator: '//*[@class="step-buttons"]//*[contains(text(),"下一步")]'
+    action: click
+
+get_save_draft_toast:
+  - by: xpath
+    locator: '//*[@class="ivu-message-custom-content ivu-message-success"]/span'
+    action: ele_status

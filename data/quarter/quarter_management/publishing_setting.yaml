@@ -1,0 +1,475 @@
+get_quarter_type:
+  - by: xpath
+    locator: '//*[text()="問卷類型"]/../div//span'
+    action: wait
+  - by: xpath
+    locator: '//*[text()="問卷類型"]/../div//span'
+    action: text
+
+clear_quarter_type:
+  - by: xpath
+    locator: '//*[text()="問卷類型"]/../div//i'
+    action: click
+
+quarter_type:
+#展開問卷類型的下拉框
+  - by: xpath
+    locator: '//*[text()="問卷類型"]/../div//i'
+    action: click
+#根據傳入的值選擇類型
+  - by: xpath
+    locator: '//li[contains(text(),"${quarter_type}")]'
+    action: wait
+  - by: xpath
+    locator: '//li[contains(text(),"${quarter_type}")]'
+    action: click
+
+teacher_cancel:
+  - by: xpath
+    locator: '//*[@class="ivu-checkbox-input" and @value="TEACHER"]'
+    action: click
+
+teacher_all_cancel:
+  - by: xpath
+    locator: '//*[@class="ivu-checkbox-input" and @value="TEACHER"]/../../../../div[2]//input[@value="ALL"]'
+    action: click
+
+click_student:
+  - by: xpath
+    locator: '//*[@class="ivu-checkbox-input" and @value="STUDENT"]'
+    action: click
+
+click_teacher_person:
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[1]/div/label[2]//input'
+    action: click
+
+click_teacher_group:
+#勾選“部門”
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[1]/div/label[3]//input'
+    action: click
+#點擊“展開”icon
+  - by: xpath
+    locator: '//*[@class="icon ivu-icon ivu-icon-md-arrow-dropdown"]'
+    action: click
+
+input_group:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"已选择部門")]/../../../div[2]/div[1]/div/div[2]//input'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"已选择部門")]/../../../div[2]/div[1]/div/div[2]//input'
+    action: send
+    value: ${group}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"已选择部門")]/../../../div[2]/div[1]/div/div[2]//i'
+    action: click
+#勾選部門數據
+  - by: xpath
+    locator: '//*[contains(text(),"已选择部門")]/../../../div[2]/div[2]//*[contains(text(),"${group}")]/../../div[1]//input'
+    action: click
+
+click_student_multi_cond:
+#勾選 多條件組合
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[1]/div//input[@value="CONDITION"]'
+    action: click
+
+
+click_college_select:
+#定位學院展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[1]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+input_college:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${college}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選學院數據
+  - by: xpath
+    locator: 1
+    action: sleep
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[1]/div/div/div[2]//*[contains(text(),"${college}")]/../..//input'
+    action: click
+
+
+click_major_select:
+#定位專業展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[1]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+
+input_major:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]'
+    action: click
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${major}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[1]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選專業數據
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[1]/div/div/div[2]//*[contains(text(),"${major}")]/../..//input'
+    action: click
+
+click_program_select:
+#定位課程展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[2]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+
+input_program:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${program}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選課程數據
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[2]/div/div/div[2]//*[contains(text(),"${program}")]/../..//input'
+    action: click
+
+click_term_select:
+#定位學期展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+
+input_term:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]'
+    action: click
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${term}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[2]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選學期數據
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[2]/div/div/div[2]//*[contains(text(),"${term}")]/../..//input'
+    action: click
+
+click_student_type_select:
+#定位學生類型展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[3]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+
+input_student_type:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${student_type}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選學生類型數據
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[3]/div/div/div[2]//*[contains(text(),"${student_type}")]/../..//input'
+    action: click
+
+click_student_status_select:
+#定位學生狀態展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[3]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+
+input_student_status:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]'
+    action: click
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${student_status}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[3]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選學生狀態數據
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[2]/div/div[2]/div[3]/div/div/div[2]//*[contains(text(),"${student_status}")]/../..//input'
+    action: click
+
+click_acco_type_select:
+#定位住宿類型展開icon，點擊展開
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[4]/div/div/div[1]//i[@class="ivu-select-arrow ivu-icon ivu-icon-ios-arrow-down"]'
+    action: click
+
+input_acco_type:
+#定位input輸入框
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[4]/div/div/div[2]//input[@class="input-search"]'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[4]/div/div/div[2]//input[@class="input-search"]'
+    action: send
+    value: ${acco_type}
+#點擊搜索icon
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[4]/div/div/div[2]//input[@class="input-search"]/../i'
+    action: click
+#勾選住宿類型數據
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇") and @class="quaint"]/../div/div[1]/div[1]/div/div[2]/div[4]/div/div/div[2]//*[contains(text(),"${acco_type}")]/../..//input'
+    action: click
+
+click_student_person:
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[1]/div/label[2]//input'
+    action: click
+
+click_student_all:
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../div//*[contains(text(),"全部")]//input'
+    action: click
+
+click_staffNo:
+#勾選教職工工號
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[2]//*[contains(text(),"工號")]//input'
+    action: click
+
+click_staffNo_s:
+#勾選學生工號
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[2]//*[contains(text(),"工號")]//input'
+    action: click
+
+input_staff:
+#清楚輸入框並輸入人員賬號 or 工號
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[2]//textarea'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[2]//textarea'
+    action: send
+    value: ${staff}
+
+#點擊“檢查”
+  - by: xpath
+    locator: 1
+    action: sleep
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[2]//*[@class="button-min primary"]'
+    action: click
+
+input_staff_s:
+#清楚輸入框並輸入人員賬號 or 工號
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[2]//textarea'
+    action: clear
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[2]//textarea'
+    action: send
+    value: ${staff}
+#點擊“檢查”
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[2]//*[@class="button-min primary"]'
+    action: click
+
+upload_list:
+#點擊導入人員名單-教職工
+  - by: xpath
+    locator: '//*[contains(text(),"教職員發佈範圍")]/../../div[2]//*[contains(text()," 導入名單")]'
+    action: click
+
+upload_list_s:
+#點擊導入人員名單-學生
+  - by: xpath
+    locator: '//*[contains(text(),"學生發佈範圍")]/../../div[2]//*[contains(text()," 導入名單")]'
+    action: click
+
+upload_outsidervolist:
+#勾選外部人與那
+  - by: xpath
+    locator: '//*[@class="ivu-checkbox-input" and@value="OUTSIDE"]'
+    action: click
+#點擊上傳名單
+  - by: xpath
+    locator: '//*[@class="button-min op success"]'
+    action: click
+
+close_outsider_pop:
+  - by: xpath
+    locator: '//*[@class="ivu-modal-wrap"]/div/div/div[1]/div/div[1]/img'
+    action: wait_click
+  - by: xpath
+    locator: '//*[@class="ivu-modal-wrap"]/div/div/div[1]/div/div[1]/img'
+    action: click
+
+
+click_staffNo_admin:
+  - by: xpath
+    locator: '//*[contains(text(),"问卷管理人员")]/../div//label[2]//input'
+    action: click
+
+input_staff_admin:
+  - by: xpath
+    locator: '//input[@class="input-people"]'
+    action: clear
+  - by: xpath
+    locator: '//input[@class="input-people"]'
+    action: send
+    value: ${admin}
+#等待結果出現，並點擊第一位人員
+  - by: xpath
+    locator: 1
+    action: sleep
+  - by: xpath
+    locator: '//label[contains(text(),"问卷管理人员")]/..//ul/li[1]'
+    action: click
+
+clear_starttime:
+#輸入計劃發佈日期，點擊日期插件
+  - by: xpath
+    locator: '//label[contains(text(),"計劃發佈時間")]/../div/div/div[1]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: wait_display
+
+starttime:
+  - by: xpath
+    locator: '//label[contains(text(),"計劃發佈時間")]/../div/div/div[1]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: send
+    value: ${startdate}
+#輸入計劃發佈時間
+  - by: xpath
+    locator: '//label[contains(text(),"計劃發佈時間")]/../div/div/div[2]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: ctrl_a
+  - by: xpath
+    locator: '//label[contains(text(),"計劃發佈時間")]/../div/div/div[2]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: send
+    value: ${starttime}
+
+clear_endtime:
+#獲取計劃過期日期
+  - by: xpath
+    locator: '//label[contains(text(),"到期時間")]/../div/div/div[1]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: wait_display
+
+endtime:
+  - by: xpath
+    locator: '//label[contains(text(),"到期時間")]/../div/div/div[1]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: send
+    value: ${enddate}
+#輸入計劃過期時間
+  - by: xpath
+    locator: '//label[contains(text(),"到期時間")]/../div/div/div[2]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: ctrl_a
+  - by: xpath
+    locator: '//label[contains(text(),"到期時間")]/../div/div/div[2]//*[@class="ivu-input ivu-input-default ivu-input-with-suffix"]'
+    action: send
+    value: ${endtime}
+
+  - by: xpath
+    locator: '//*[contains(text(),"問卷到期時間")]'
+    action: click
+
+get_cycle:
+  - by: xpath
+    locator: '//*[text()="問卷推送週期"]/../div//span'
+    action: wait
+  - by: xpath
+    locator: '//*[text()="問卷推送週期"]/../div//span'
+    action: text
+
+clear_cycle:
+  - by: xpath
+    locator: '//*[text()="問卷推送週期"]/../div//i'
+    action: click
+
+cycle:
+#展開問卷推送週期的下拉框
+  - by: xpath
+    locator: '//*[text()="問卷推送週期"]/../div//i'
+    action: click
+#根據傳入的值選擇類型
+  - by: xpath
+    locator: '//li[contains(text(),"${cycle}")]'
+    action: wait
+  - by: xpath
+    locator: '//li[contains(text(),"${cycle}")]'
+    action: click
+
+click_save_draft:
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-default"]//span'
+    action: click
+
+get_save_draft_toast:
+  - by: xpath
+    locator: '//*[@class="ivu-message-custom-content ivu-message-success"]/span'
+    action: ele_status
+
+click_save:
+#点击提交表单
+  - by: xpath
+    locator: '//*[@class="step-btn we-p-big ivu-btn ivu-btn-primary"]/span'
+    action: click
+#二次弹窗确认创建问卷
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-primary"]/span'
+    action: click
+
+#點擊“返回”元素
+  - by: xpath
+    locator: 4
+    action: sleep
+  - by: xpath
+    locator: '//*[@class="we we-p-big mt-40 ivu-btn ivu-btn-default"]/span'
+    action: click
+
+click_save_no_pop:
+#点击提交表单
+  - by: xpath
+    locator: '//*[@class="step-btn we-p-big ivu-btn ivu-btn-primary"]/span'
+    action: click
+
+get_endtime_error_tips:
+  - by: xpath
+    locator: '//*[@class="ivu-form-item-error-tip"]'
+    action: text

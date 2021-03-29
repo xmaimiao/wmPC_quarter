@@ -1,0 +1,12 @@
+goto_quarter_management:
+  - by: xpath
+    locator: '//span[text()="問卷管理" and @class="menu-item-label"]'
+    action: click
+goto_my_quarter:
+  - by: xpath
+    locator: '//span[text()="我的問卷" and @class="menu-item-label"]'
+    action: click
+goto_quarter_statistics:
+  - by: xpath
+    locator: '//span[text()="問卷統計" and @class="menu-item-label"]'
+    action: click

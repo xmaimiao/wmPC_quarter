@@ -1,0 +1,607 @@
+test_creat_quarter:
+ - {mult_re1: {required: True, mult: True},
+    mult_re2: {required: False, mult: True},
+    mult_re3: {required: False, mult: False},
+    mult_re4: {required: True, mult: False},
+
+
+    quarter_name: "Explain how...",
+    quarter_remark: "The code coverage testing tool runs parallel while performing testing on the actual product.",
+    subject_name1: "Explain how to test documents in a project that span across the software development lifecycle?",
+    option_list1: [{item: Latent defect, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Masked defect, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}}],
+
+#    選擇題2 ，有圖片
+    subject_name2: "Mention what is bottom up testing?",
+    option_list2: [{item: "Statement Coverage: It verifies that each line of source code has been executed and tested", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 { item: "Decision Coverage: It ensures that every decision in the source code is executed and tested", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                 { item: "Path Coverage: It ensures that every possible route through a given part of code is executed and tested", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+
+    subject_name3: "Explain how to test documents in a project that span across the software development lifecycle?",
+    option_list3: [{item: Project Name, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Module Name, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Defect detected on, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Defect detected by, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Defect ID and Name, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Snapshot of the defect, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Priority and Severity status, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Defect resolved by, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}},
+                 {item: Defect resolved on, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"}}],
+
+    subject_name4: "Explain how to test documents in a project that span across the software development lifecycle? ",
+    option_list4: [ { item: "Central/Project test plan: It is the main test plan that outlines the complete test strategy of the project. This plan is used till the end of the software development lifecycle", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: "Acceptance test plan: This document begins during the requirement phase and is completed at final delivery", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: "System test plan: This plan starts during the design plan and proceeds until the end of the project", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                    { item: "Integration and Unit test plan: Both these test plans start during the execution phase and last until the final delivery", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+
+    subject_name5: "Explain how to test documents in a project that span across the software development lifecycle?",
+    option_list5: [ { item: Tests that need to be run for every build of the application, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                  { item: Tests that use multiple data for the same set of actions, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                  { item: Identical tests that needs to be executed using different browsers, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                  { item: Mission critical pages, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                  { item: Transaction with pages that do not change in short time, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} }],
+
+    subject_name6: "Explain in a testing project what testing activities would you automate? ",
+    option_list6: [ { item: Tests that need to be run for every build of the application, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Tests that use multiple data for the same set of actions, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                    { item: Identical tests that needs to be executed using different browsers, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Mission critical pages, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Transaction with pages that do not change in short time, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },],
+
+    subject_name7: "Mention what is the purpose behind doing end-to-end testing?",
+    option_list7: [ { item: To validate the software requirements and integration with external interfaces, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Testing application in real world environment scenario, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                    { item: Testing of interaction between application and database, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} }, ],
+
+    subject_name8: "What are the different Methodologies in Agile Development Model?",
+    option_list8: [ { item: "Extreme Programming (XP)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Scrum, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                    { item: "Dynamic Systems Development Model (DSDM) ", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Feature-Driven Development, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Lean Software Development, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Agile Unified Process, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Crystal, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} }, ],
+
+    subject_name9: "Which of the following are valid objectives for incident reports?",
+    option_list9: [ { item: "Provide developers and other parties with feedback about the problem to enable identification, isolation and correction as necessary", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Scrum, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                    { item: "Dynamic Systems Development Model (DSDM) ", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Provide a vehicle for assessing tester competence, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Provide testers with a means of tracking the quality of the system under test, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },],
+
+    subject_name10: "Consider the following techniques. Which are static and which are dynamic techniques?",
+    option_list10: [ { item: "Equivalence Partitioning", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Use Case Testing, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                    { item: "Data Flow Analysis", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Exploratory Testing, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Decision Testing, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                    { item: Inspections, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },],
+#主觀題1，有提示，有字數限制
+    subjective_name1: "Explain which test cases are written first black boxes or white boxes?",
+    tips1: {switch: True, text: "Black box test cases are written first as to write black box test cases;"},
+    words1: {switch: True, text: 200},
+#主觀題2，無提示，有字數限制
+    subjective_name2: "What is an equivalence partition (also known as an equivalence class)?",
+    tips2: { switch: False, text: "Black box test cases are written first as to write black box test cases;" },
+    words2: { switch: True, text: 100 },
+
+    subjective_name3: "When should configuration management procedures be implemented?",
+    tips3: { switch: True, text: "During test planning." },
+    words3: { switch: True, text: 50 },
+#主觀題4，有提示，無字數限制
+    subjective_name4: "Testing where in we subject the target of the test , to varying workloads to measure and evaluate the performance behaviours and ability
+    of the target and of the test to continue to function properly under these different workloads?",
+    tips4: { switch: True, text: "Load Testing" },
+    words4: { switch: False, text: 200 },
+
+    subjective_name5: "A Type of functional Testing, which investigates the functions relating to detection of threats, such as virus from malicious outsiders?",
+    tips5: { switch: True, text: "Security Testing" },
+    words5: { switch: False, text: 200 },
+#主觀題4，無提示，無字數限制
+    subjective_name6: "What is the role of moderator in review process?",
+    tips6: { switch: False, text: "Black box test cases are written first as to write black box test cases;" },
+    words6: { switch: False, text: 200 },
+
+    quarter_type: { type1: "限定人群", type2: "不限人群"},
+    range_t: { input: True, staffNo: False, staff: "mai1,mai2,mai3,mai4"},
+    excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+    admin: { staffNo: False, staff: "mai1,mai2,mai3,mai4"},
+#    日期和時間寫在引號中，否則可能出錯
+    startdate: "2020-12-22",
+    starttime: "08:30",
+    enddate: "2020-12-23",
+    endtime: "15:00",
+    cycle: { cycle1: "每天", cycle2: "僅一天"}
+ }
+
+test_creat_quarter_base:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       quarter_name: "宿舍问卷表",
+       quarter_remark: "感谢您能抽出几分钟时间来参加本次答题，现在我们就马上开始吧！                                       ",
+       subject_name1: "你对宿舍的整体住宿条件是否满意",
+       option_list1: [ { item: 满意, is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: 其他, is_img: True,is_other: True,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name2: "你对宿舍的公共区域环境卫生是否满意",
+       option_list2: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name3: "你对宿舍的收费标准是否满意",
+       option_list3: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name4: "你对宿舍的安全状况是否满意",
+       option_list4: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name5: "你对宿舍的供电，供水设施是否满意",
+       option_list5: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name6: "你对宿舍房间内基本设施（电视、家具、网络等）是否满意",
+       option_list6: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name7: "你对宿舍装修情况和房间硬装设施使用状况是否满意",
+       option_list7: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name8: "你对宿舍后勤管理及服务是否满意",
+       option_list8: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name9: "你对宿舍零星修缮状况是否满意",
+       option_list9: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name10: "对宿舍周边环境是否满意",
+       option_list10: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name11: "对宿舍同学是否满意",
+       option_list11: [ { item: 满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                        { item: 基本满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                        { item: 不满意, is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subjective_name1: "对职工宿舍管理办法中的规定有没有意见，有什么意见？",
+       tips1: { switch: True, text: "舉例説明" },
+       words1: { switch: True, text: 100},
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       admin: { staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705,gray,tao" },
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2020-12-23",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" }
+   }
+
+test_creat_quarter_base1:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       quarter_name: "JAVA笔试题",
+#       答案没有对错之分，所有答卷信息也都将保密，仅供分析使用，请您放心填写。
+       quarter_remark: "您好！非常感谢您愿意用几分钟的时间，完成以下答卷。现在，我们就马上开始吧！",
+       subject_name1: "以下程序结果是？public class NULL {public static void haha(){System.out.println(haha);}public static void main(String[] args) {((NULL)null).haha();}}",
+       option_list1: [ { item: "haha", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "编译不通过", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "编译通过,执行报错", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "内存溢出", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name2: "下面哪些不是Thread类的方法（ ）",
+       option_list2: [ { item: "start()", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "exit()", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "run()", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "getPriority()", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name3: "下列说法正确的是（ ）",
+       option_list3: [ { item: "LinkedList继承自List", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "AbstractSet继承自Set", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "WeakMap继承自HashMap", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "以上说法都不对", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name4: "0.6332的数据类型是？（ ）",
+       option_list4: [ { item: "float", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "double", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "Float", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "Float", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name5: "下面哪个流类属于面向字符的输入流？（ ）",
+       option_list5: [ { item: "BufferedWrite", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "FileInputStream", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "ObjectInputStream", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "InputStreamReader", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name6: "struts框架中，使用以下（ ）标签可以显示数据验证错误信息。",
+       option_list6: [ { item: "html:error/", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "html:errors/", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "logic:error/", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "logic:errors/", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name7: "ArrayList list = new ArrayList(20);中的list扩充几次（ ）？",
+       option_list7: [ { item: "0", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "1", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "2", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "3", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name8: "下面描述错误的是（ ）？",
+       option_list8: [ { item: "子类的成员变量能与其父类的成员变量同名。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "break语句在switch结构中是必须的.", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "UDP是面向无连接的网络连接。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "Hashtable是同步的，而HashMap不是同步的。所以不要求同步的时候，用HashMap的效率较高。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name9: "对XML文档的描述，错误的是（ ）？",
+       option_list9: [ { item: "代码得到编译，并输出“s=”", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "代码得到编译，并输出“s=null”", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "代码不能编译通过", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "代码得到编译，但捕获到 NullPointException异常", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name10: "下面代码输出结果是（ ）？import java.io.*;import java.util.*;public class foo{ public static void main (String[] args){String s; System.out.println(s= + s);}}",
+       option_list10: [ { item: "XML 文档必须有根元素", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "XML 的属性值须加引号", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "XML 标签对大小写不敏感", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "所有 XML 元素都须有关闭标签", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+
+       subjective_name1: "请使用三目运算符描述以下代码：If(a0){B=1;}eles{B=2;}",
+       tips1: { switch: False, text: "舉例説明" },
+       words1: { switch: True, text: 200},
+
+       subjective_name2: "写出下面程序的执行结果class HelloA { public HelloA() { System.out.println( HelloA ); } { System.out.println( Im A class ); } static { System.out.println( static A ); }}public class HelloB extends HelloA { public HelloB() { System.out.println( HelloB ); } { System.out.println( Im B class ); } static { System.out.println( static B ); } public static void main( String[] args ) { 　　　　new HelloB(); }}",
+       tips2: { switch: False, text: "舉例説明" },
+       words2: { switch: False, text: 100 },
+
+       subjective_name3: "改错题计算 1/1+1/2+1/3+...+1/100 的值-------------------------------------------------------*/public class Prog1{public static void main( String args[ ]) { int sum=0.0; for(int i=1; i100; i++) sum+=1/i; System.out.println( sum=,sum ); }}",
+       tips3: { switch: False, text: "舉例説明" },
+       words3: { switch: False, text: 100 },
+
+       subjective_name4: "数据库查询现有如下两个数据表，请按要求写出SQL语句（避免子查询） 政党表（政党ID、政党名称、党员人数、纲领摘要） 议员表（议员ID、姓名、性别、年龄、政党ID）获取所有政党的议员情况，包括政党名称、党员人数、议员人数，按议员数排倒序",
+       tips4: { switch: False, text: "舉例説明" },
+       words4: { switch: False, text: 100 },
+
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       admin: { staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705,gray,tao" },
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2020-12-23",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" },
+   }
+
+test_creat_quarter_base2:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       tips1: { switch: True, text: "舉例説明" },
+       tips2: { switch: False, text: "舉例説明" },
+       words1: { switch: True, text: 200},
+       words2: { switch: False, text: 100 },
+
+       quarter_name: "普鲁斯特问卷",
+       quarter_remark: "您好！非常感谢您愿意用几分钟的时间，完成以下答卷。现在，我们就马上开始吧！",
+
+       subjective_name1: "你认为最完美的快乐是怎样的？",
+
+       subjective_name2: "你最希望拥有那种才华？",
+
+       subjective_name3: "你最恐惧的是什么？",
+
+       subjective_name4: "你目前的心境怎样？",
+
+       subjective_name5: "还在世的人中你最佩服的是谁？",
+
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       admin: ["deke1700","deke1703","deke1704","deke1705"],
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2020-12-23",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" },
+   }
+
+test_creat_quarter_base3:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       quarter_name: "旅游调查",
+       quarter_remark: "您好，我们是XXX，我们正在进行一项关于旅游的调查，想邀请您用几分钟时间帮忙填答这份问卷。本问卷实行匿名制，所有数据只用于统计分析， 请您放心填写。题目选项无对错之分，请您按自己的实际情况填写。谢谢您的帮助！",
+       subject_name1: "请问您最近3个月是否有出游计划？",
+       option_list1: [ { item: "是", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "否", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } , ],
+       subject_name2: "请问您计划什么时间旅游？",
+       option_list2: [ { item: "周末", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "节假日", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "平时", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "其他", is_img: False,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} }  ],
+       subject_name3: "请问您这次出行的原因是？",
+       option_list3: [ { item: "公务出差", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "家庭外出", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "单位奖励旅游", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "探亲", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "其他", is_img: True,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name4: "请问您打算去哪里旅游？",
+       option_list4: [ { item: "国外游", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "国内游", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name5: "下面哪个流类属于面向字符的输入流？（ ）",
+       option_list5: [ { item: "BufferedWrite", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "FileInputStream", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "ObjectInputStream", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "InputStreamReader", is_img: True,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name6: "struts框架中，使用以下（ ）标签可以显示数据验证错误信息。",
+       option_list6: [ { item: "html:error/", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "html:errors/", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "logic:error/", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "logic:errors/", is_img: True,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name7: "ArrayList list = new ArrayList(20);中的list扩充几次（ ）？",
+       option_list7: [ { item: "0", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "1", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "2", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "3", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+       subject_name8: "下面描述错误的是（ ）？",
+       option_list8: [ { item: "子类的成员变量能与其父类的成员变量同名。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "break语句在switch结构中是必须的.", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "UDP是面向无连接的网络连接。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "Hashtable是同步的，而HashMap不是同步的。所以不要求同步的时候，用HashMap的效率较高。", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name9: "对XML文档的描述，错误的是（ ）？",
+       option_list9: [ { item: "代码得到编译，并输出“s=”", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "代码得到编译，并输出“s=null”", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "代码不能编译通过", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "代码得到编译，但捕获到 NullPointException异常", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+       subject_name10: "下面代码输出结果是（ ）？import java.io.*;import java.util.*;public class foo{ public static void main (String[] args){String s; System.out.println(s= + s);}}",
+       option_list10: [ { item: "XML 文档必须有根元素", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "XML 的属性值须加引号", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "XML 标签对大小写不敏感", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "所有 XML 元素都须有关闭标签", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ],
+
+       subjective_name1: "请使用三目运算符描述以下代码：If(a0){B=1;}eles{B=2;}",
+       tips1: { switch: False, text: "舉例説明" },
+       words1: { switch: True, text: 200},
+
+       subjective_name2: "写出下面程序的执行结果class HelloA { public HelloA() { System.out.println( HelloA ); } { System.out.println( Im A class ); } static { System.out.println( static A ); }}public class HelloB extends HelloA { public HelloB() { System.out.println( HelloB ); } { System.out.println( Im B class ); } static { System.out.println( static B ); } public static void main( String[] args ) { 　　　　new HelloB(); }}",
+       tips2: { switch: False, text: "舉例説明" },
+       words2: { switch: False, text: 100 },
+
+       subjective_name3: "改错题计算 1/1+1/2+1/3+...+1/100 的值-------------------------------------------------------*/public class Prog1{public static void main( String args[ ]) { int sum=0.0; for(int i=1; i100; i++) sum+=1/i; System.out.println( sum=,sum ); }}",
+       tips3: { switch: False, text: "舉例説明" },
+       words3: { switch: False, text: 100 },
+
+       subjective_name4: "数据库查询现有如下两个数据表，请按要求写出SQL语句（避免子查询） 政党表（政党ID、政党名称、党员人数、纲领摘要） 议员表（议员ID、姓名、性别、年龄、政党ID）获取所有政党的议员情况，包括政党名称、党员人数、议员人数，按议员数排倒序",
+       tips4: { switch: False, text: "舉例説明" },
+       words4: { switch: False, text: 100 },
+
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "deke1708,deke1700,deke1703,deke1704,deke1705,gray" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       group_list: ["大學基金會","大學校董會",],
+       range_s: {
+         input: True, staffNo: False,
+         staff: "1709853ta011001,1709853ub011006,1709853ub211001,1709853upa11001" },
+
+       student_multi_cond: {
+           college: { switch: True,value: [ "中醫藥學院", ] },
+           major: { switch: True,value: [ "工商管理學士學位", ], },
+           program: { switch: True,value: [ "工商管理學士學位", ] },
+           term: { switch: True,value: [ "1809", ] },
+           student_type: { switch: True,value: [ "本科", ] },
+           student_status: { switch: True,value: [ "在讀生-ACTIVE", "已轉系生-CHANGED", ] },
+           acco_type: { switch: True,value: [ "住宿生", ] },
+       },
+
+       excel_path_s: D:\PycharmProjects\wmPC_quarter\excel\staff_user_s.slxs,
+       outsider_path: D:\PycharmProjects\wmPC_quarter\excel\outsider_import_template2,
+       admin: ["deke1700","deke1703","deke1704","deke1705"],
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2021-01-20",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" },
+   }
+
+test_creat_quarter_base4:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       quarter_name: "情商测试题国际标准10题",
+       quarter_remark: "情商通常是指情绪商数，简称EQ。人与人之间的情商并无明显的先天差别，更多与后天的培养息息相关。想知道你的情商有多高吗，跟着小编进入情商测试题国际标准10题！",
+       subject_name1: "生活中的你时常感觉到厌倦？",
+       option_list1: [ { item: "是的 (跳转到第2题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "不是 (跳转到第3题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "偶尔 (跳转到第4题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } , ],
+       subject_name2: "你跟父母的关系挺好的？",
+       option_list2: [ { item: "是的 (跳转到第3题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "不是 (跳转到第4题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "一般 (跳转到第5题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} }  ],
+       subject_name3: "你曾经在暑假打过工吗？",
+       option_list3: [ { item: "是的 (跳转到第4题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "没有 (跳转到第5题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "打算去 (跳转到第6题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name4: "你介意结婚的时候没有房子吗？",
+       option_list4: [ { item: "是的 (跳转到第5题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "不是 (跳转到第6题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "不知道 (跳转到第7题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name5: "你会把生活中的情绪带到工作中吗？",
+       option_list5: [ { item: "会 (跳转到第6题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "不会 (跳转到第7题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "有时候 (跳转到第8题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name6: "跟人去相亲，你最讨厌对方的哪一种抠门行为？",
+       option_list6: [ { item: "不愿意买单 (跳转到第7题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "点些便宜的菜点 (跳转到第8题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "不进消费的场所 (A)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name7: "你是不是一个很容易相信他人的人？",
+       option_list7: [ { item: "是的 (跳转到第8题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "不是 (跳转到第9题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "看情况 (跳转到第10题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name8: "下面三个三国人物，你更欣赏或更佩服谁？",
+       option_list8: [ { item: "曹操 (跳转到第9题)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "关羽 (A)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "诸葛亮 (B)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } , ],
+       subject_name9: "工作中，你最讨厌的上司类型是？",
+       option_list9: [ { item: "独断专行的 (C)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "唯唯诺诺的 (D)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "趋炎附势的 (A)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,],
+       subject_name10: "下面三种搭档，你最愿意与谁一起共事？",
+       option_list10: [ { item: "性格好，但很菜鸟的 (B)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} },
+                       { item: "长得美，但很高傲的 (C)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } ,
+                       { item: "能力强，但很强势的 (D)", is_img: True,is_other: False,tips: {switch: False,option_tips: "該項需要符合史實"} } , ],
+
+       subjective_name1: "请使用三目运算符描述以下代码：If(a0){B=1;}eles{B=2;}",
+       tips1: { switch: False, text: "舉例説明" },
+       words1: { switch: True, text: 200},
+
+       subjective_name2: "写出下面程序的执行结果class HelloA { public HelloA() { System.out.println( HelloA ); } { System.out.println( Im A class ); } static { System.out.println( static A ); }}public class HelloB extends HelloA { public HelloB() { System.out.println( HelloB ); } { System.out.println( Im B class ); } static { System.out.println( static B ); } public static void main( String[] args ) { 　　　　new HelloB(); }}",
+       tips2: { switch: False, text: "舉例説明" },
+       words2: { switch: False, text: 100 },
+
+       subjective_name3: "改错题计算 1/1+1/2+1/3+...+1/100 的值-------------------------------------------------------*/public class Prog1{public static void main( String args[ ]) { int sum=0.0; for(int i=1; i100; i++) sum+=1/i; System.out.println( sum=,sum ); }}",
+       tips3: { switch: False, text: "舉例説明" },
+       words3: { switch: False, text: 100 },
+
+       subjective_name4: "数据库查询现有如下两个数据表，请按要求写出SQL语句（避免子查询） 政党表（政党ID、政党名称、党员人数、纲领摘要） 议员表（议员ID、姓名、性别、年龄、政党ID）获取所有政党的议员情况，包括政党名称、党员人数、议员人数，按议员数排倒序",
+       tips4: { switch: False, text: "舉例説明" },
+       words4: { switch: False, text: 100 },
+
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       student_multi_cond: {
+         college: { switch: True,value: [ "中醫藥學院", ] },
+         major: { switch: True,value: [ "工商管理學士學位", ], },
+         program: { switch: True,value: [ "工商管理學士學位", ] },
+         term: { switch: True,value: [ "1809", ] },
+         student_type: { switch: True,value: [ "本科", ] },
+         student_status: { switch: True,value: [ "在讀生-ACTIVE", "已轉系生-CHANGED", ] },
+         acco_type: { switch: True,value: [ "住宿生", ] },
+       },
+       admin: ["deke1700","deke1703","deke1704","deke1705","gray","tao"],
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2020-12-23",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" },
+   }
+
+test_save_success:
+  - { quarter_name: "情商测试题国际标准10题草稿測試",  }
+
+test_save_success_for_next:
+  - { quarter_name: "情商测试题国际标准10题",
+      subject_name1: "生活中的你时常感觉到厌倦？",
+      option_list1: [ { item: "是的 ", is_img: False,is_other: False,tips: { switch: False,option_tips: "(跳转到第2题)" } },
+                      { item: "不是 ", is_img: False,is_other: False,tips: { switch: False,option_tips: "(跳转到第3题)" } } ,
+                      { item: "偶尔 ", is_img: False,is_other: False,tips: { switch: False,option_tips: "(跳转到第4题)" } } , ],
+  }
+
+test_detele_quarter_for_name:
+  - { quarter_name: "2021/01/12旅游调查834",}
+  - { quarter_name: "2021/01/12旅游调查44",}
+
+test_edit_and_save:
+  - { quarter_name: "管理員編輯問卷標題",quarter_status: "草稿"}
+
+test_stop_publishing_for_name:
+#  - { keys:{quarter_type: "全部",quarter_name: "2021/01/13旅游调查測試停止發佈，勿動960",},
+#      expect: "停止發佈"}
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員643",},
+      expect: "停止發佈"}
+
+test_get_publish_setting_for_name:
+  - { keys:{quarter_type: "已結束",quarter_name: "旅游调查學生、教師、外部人員3",}}
+
+test_simple_search:
+#  - { keys:{quarter_type: "草稿",quarter_name: "2021/01/13旅游调查測試停止發佈，勿動796",}}
+  - { keys:{quarter_type: "全部",quarter_name: "多條件組合",}}
+
+test_advanced_search:
+  - { keys:
+        {startTime: { switch: False,value: "2020/01/05" },endStartTime: { switch: False,value: "2020/01/05" },
+         startPlanExpireTime: { switch: False,value: "2020/01/05" },endPlanExpireTime: { switch: False,value: "2020/01/05" },
+         startFinishedNumber: { switch: False,value: 0 },endFinishedNumber: { switch: False,value: 0 },
+         startPushNumber: { switch: False,value: 0 },endPushNumber: { switch: False,value: 0 },
+         title: { switch: False,value: 學生 },
+         createdName: { switch: False,value: xxx },
+         telOrEmail: { switch: False,value: xxx },
+         frequency: { switch: False,value: 每天 },
+         peopleOriented: { switch: True,value: 不限人群 },
+         status: { switch: False,value: 停止發佈 },}
+  }
+
+test_edit_endtime:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員898",},
+      enddate: "2021/02/25",
+      endtime: "22:10",}
+
+test_relseased_not_edit:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員898",}}
+
+test_edit_publish_setting:
+    - { keys:{quarter_type: "全部",quarter_name: "2021/01/21旅游调查學生多條件組合，外部人員88",},
+        quarter_type: { type1: "限定人群", type2: "不限人群" },
+        range_t: { input: True, staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705" },
+        excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+        group_list: [ "大學基金會","大學校董會", ],
+        range_s: {
+          input: True, staffNo: False,
+          staff: "1709853ta011001,1709853ub011006,1709853ub211001,1709853upa11001" },
+
+       student_multi_cond: {
+           college: { switch: True,value: [ "中醫藥學院", ] },
+           major: { switch: True,value: [ "工商管理學士學位", ], },
+           program: { switch: True,value: [ "工商管理學士學位", ] },
+           term: { switch: True,value: [ "1809", ] },
+           student_type: { switch: True,value: [ "本科", ] },
+           student_status: { switch: True,value: [ "在讀生-ACTIVE", "已轉系生-CHANGED", ] },
+           acco_type: { switch: True,value: [ "住宿生", ] },
+       },
+
+        excel_path_s: D:\PycharmProjects\wmPC_quarter\excel\staff_user_s.slxs,
+        outsider_path: D:\PycharmProjects\wmPC_quarter\excel\outsider_import_template2,
+        admin: { staffNo: False, staff: "deke1700" },
+      #    日期和時間寫在引號中，否則可能出錯
+        startdate: "2020-12-22",
+        starttime: "08:30",
+        enddate: "2021-01-20",
+        endtime: "15:00",
+        cycle: { cycle1: "每天", cycle2: "僅一次" },}
+
+test_copy_quarter:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生全部1",},
+      quarter_name: 旅游调查,
+      range_t: { input: True, staffNo: False, staff: "deke1700,deke1703,deke1704,deke1705,gray" },
+      range_s: {
+        input: True, staffNo: False,
+        staff: "1709853zc111003" },
+      enddate: "2021/03/15",
+      endtime: "23:00",
+      cycle: { cycle1: "每天", cycle2: "僅一次" },
+  }
+
+#  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員809",},
+#      quarter_name: 旅游调查,
+#      range_t: { input: True, staffNo: False, staff: "deke1708" },
+#      enddate: "2021/02/24",
+#      endtime: "20:28",
+#      cycle: { cycle1: "每天", cycle2: "僅一次" },
+#  }
+
+test_stop_and_copy_edit_endtime:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員898",},
+      quarter_name: 旅游调查,
+      enddate: "2021/02/25",
+      endtime: "21:50",
+      cycle: { cycle1: "每天", cycle2: "僅一次" },
+  }
+
+test_stop_and_edit_endtime:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員898",},
+      enddate: "2021/02/25",
+      endtime: "22:10",
+  }
+

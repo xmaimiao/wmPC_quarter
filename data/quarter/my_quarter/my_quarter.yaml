@@ -1,0 +1,38 @@
+quarter_type:
+  - by: xpath
+    locator: '//*[@class="pair-label-item"]//*[@class="ivu-icon ivu-icon-ios-arrow-down ivu-select-arrow"]'
+    action: click
+  - by: xpath
+    locator: '//*[@class="ivu-select-item" and contains(text(),"${quarter_type}")]'
+    action: click
+
+search_input:
+  - by: xpath
+    locator: '//*[@class="ivu-input ivu-input-default"]'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="ivu-input ivu-input-default"]'
+    action: send
+    value: ${quarter_name}
+#點擊查詢ICON
+  - by: xpath
+    locator: '//*[@class="ivu-icon ivu-icon-ios-search"]'
+    action: click
+view_quarter_for_name:
+  - by: xpath
+    locator: '//*[contains(text(),"${name}")]/../../../td[last()]//span'
+    action: wait_click
+  - by: xpath
+    locator: '//*[contains(text(),"${name}")]/../../../td[last()]//span'
+    action: click
+
+get_save_toasts:
+  - by: xpath
+    locator: '//*[@class="ivu-message-custom-content ivu-message-success"]//span'
+    action: ele_status
+
+get_quarter_name_the_fir:
+#等待數據顯示
+  - by: xpath
+    locator: '//*[@class="ivu-table-tbody"]/tr[1]/td[2]//span'
+    action: text

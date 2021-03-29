@@ -1,0 +1,96 @@
+stop_publishing:
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-primary"]/span'
+    action: wait_click
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-primary"]/span'
+    action: click
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-primary"]/span[contains(text(),"确认")]'
+    action: click
+
+click_publish_setting:
+  - by: xpath
+    locator: '//*[@class="text-button"]'
+    action: wait_click
+  - by: xpath
+    locator: '//*[@class="text-button"]'
+    action: click
+
+get_publish_type:
+  - by: xpath
+    locator: '//*[contains(text(),"發佈類型")]/../td[2]'
+    action: wait
+  - by: xpath
+    locator: '//*[contains(text(),"發佈類型")]/../td[2]'
+    action: text
+
+get_t_personal:
+  - by: xpath
+    locator: '//*[@class="teacher-personal"]'
+    action: text
+
+get_t_section:
+  - by: xpath
+    locator: '//*[@class="teacher-section"]'
+    action: text
+
+get_s_personal:
+  - by: xpath
+    locator: '//*[@class="student-personal"]'
+    action: text
+
+is_null:
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇")]/../td[2]'
+    action: text
+
+get_s_Multi_Condition_num:
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇")]/../td[2]//tbody/tr'
+    action: len
+
+get_title:
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇")]/../td[2]//tbody/tr[${i}]/td[1]'
+    action: text
+
+get_value:
+  - by: xpath
+    locator: '//*[contains(text(),"多條件選擇")]/../td[2]//tbody/tr[${i}]/td[2]/span'
+    action: text
+
+get_outsiders:
+  - by: xpath
+    locator: '//*[@class="outsiders"]'
+    action: text
+
+get_quarter_admin:
+  - by: xpath
+    locator: '//*[contains(text(),"问卷管理人员")]/../td[2]'
+    action: text
+
+get_starttime:
+  - by: xpath
+    locator: '//*[contains(text(),"计划發佈時間")]/../td[2]'
+    action: text
+
+get_endtime:
+  - by: xpath
+    locator: '//*[contains(text(),"問卷到期時間")]/../td[2]'
+    action: text
+
+get_cycle:
+  - by: xpath
+    locator: '//*[contains(text(),"問卷推送週期")]/../td[2]'
+    action: text
+
+close_publish_setting:
+  - by: xpath
+    locator: '//*[@class="ivu-drawer-wrap we-drawer"]//i[@class="ivu-icon ivu-icon-md-close"]'
+    action: click
+
+back_to_quarter_management:
+  - by: xpath
+    locator: '//*[@class="button-go-back mr-15"]/span'
+    action: click

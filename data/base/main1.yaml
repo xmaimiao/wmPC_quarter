@@ -1,0 +1,43 @@
+goto_application_for_leaver:
+  - by: xpath
+    locator: '//i[@class="icon iconfont icon-xiujia-shenqingxiujia"]'
+    action: click
+
+goto_OA_Approval:
+  - by: xpath
+    locator: '//*[@class="nav"]/li[3]/a/span'
+    action: click
+
+OA_goto_index:
+  - by: xpath
+    locator: '//*[@class="header_right"]/ul[@class="nav"]/li[2]/a/span'
+    action: click
+
+goto_my_leave:
+  - by: xpath
+    locator: '//*[@class="nav_left"]/li[1]//span'
+    action: click
+
+logout_for_fir:
+#點擊右上角個人姓名
+  - by: xpath
+    locator: '//*[@class="item user hasSecnav"]//span'
+    action: click
+  - by: xpath
+    locator: '//*[@class="item user hasSecnav"]/div//li[last()]/a'
+    action: click
+
+logout_for_sec:
+#點擊右上角展開三角符號
+  - by: xpath
+    locator: '//*[@class="link-button user-info"]/i'
+    action: click
+#點擊“退出登錄”
+  - by: xpath
+    locator: '//*[@class="right"]/div[2]/div[2]//li[last()]'
+    action: click
+
+the_sec_goto_index:
+  - by: xpath
+    locator: '//a[@class="link-button head-button hv-bright" and contains(text(),"首頁")]'
+    action: click

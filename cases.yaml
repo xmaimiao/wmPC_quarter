@@ -1,0 +1,41 @@
+#test_goto
+1.pytest test_goto.py::Test_Goto::test_sec_goto_index -v -s
+
+2.pytest test_goto.py::Test_Goto::test_index_goto_quarter -v -s
+
+#test_quarter_management
+1.pytest test_quarter_management.py::Test_Quarter_Management::test_simple_search -v -s
+
+2.pytest test_quarter_management.py::Test_Quarter_Management::test_edit_endtime -v -s
+
+3.pytest test_quarter_management.py::Test_Quarter_Management::test_copy_quarter -v -s
+
+4.pytest test_quarter_management.py::Test_Quarter_Management::test_stop_and_copy_edit_endtime -v -s
+
+5.pytest test_quarter_management.py::Test_Quarter_Management::test_stop_and_edit_endtime -v -s
+
+6.pytest test_quarter_management.py::Test_Quarter_Management::test_stop_publishing_for_name -v -s
+
+7.pytest test_quarter_management.py::Test_Quarter_Management::test_relseased_not_edit -v -s
+
+8.pytest test_quarter_management.py::Test_Quarter_Management::test_creat_quarter_t_s_not_img -v -s
+
+#test_quarter_statistic
+4.pytest test_quarter_statistic.py::Test_Quarter_Management::test_get_releasedrange -v -s
+
+
+#Test_Uat_Bug28972:
+
+1.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_edit_endtime -v -s
+
+2.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_copy_quarter -v -s
+
+3.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_stop_and_copy_edit_endtime -v -s
+
+4.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_stop_and_edit_endtime -v -s
+
+5.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_stop_publishing_for_name -v -s
+
+6.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_relseased_not_edit -v -s
+
+7.pytest test_uat_bug28972.py::Test_Uat_Bug28972::test_creat_quarter_t_s_and_outsider -v -s

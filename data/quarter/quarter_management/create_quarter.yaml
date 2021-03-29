@@ -1,0 +1,81 @@
+quarter_name:
+  - by: xpath
+    locator: '//*[@class="we ivu-form ivu-form-label-right"]/div[1]//input[@class="ivu-input ivu-input-default"]'
+    action: wait
+  - by: xpath
+    locator: '//*[@class="we ivu-form ivu-form-label-right"]/div[1]//input[@class="ivu-input ivu-input-default"]'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="we ivu-form ivu-form-label-right"]/div[1]//input[@class="ivu-input ivu-input-default"]'
+    action: send
+    value: ${quarter_name}
+
+quarter_remark:
+  - by: xpath
+    locator: '//*[@class="we ivu-form ivu-form-label-right"]/div[2]//input[@class="ivu-input ivu-input-default"]'
+    action: send
+    value: ${quarter_remark}
+
+add_choice_question:
+#點擊“添加題目”
+  - by: xpath
+    locator: 'return document.getElementsByClassName("icon-add ivu-icon ivu-icon-ios-add-circle")[0]'
+    action: execute_js_scroll
+  - by: xpath
+    locator: '//*[@class="icon-add ivu-icon ivu-icon-ios-add-circle"]'
+    action: move_to_ele
+  - by: xpath
+    locator: sleep
+    action: 1
+#選擇“選擇題”
+  - by: xpath
+    locator: '//*[@class="survey-item-menu"]/*[contains(text(),"選擇題")]'
+    action: wait_click
+  - by: xpath
+    locator: '//*[@class="survey-item-menu"]/*[contains(text(),"選擇題")]'
+    action: click
+
+add_subjective_question:
+#點擊“添加題目”
+  - by: xpath
+    locator: 'return document.getElementsByClassName("icon-add ivu-icon ivu-icon-ios-add-circle")[0]'
+    action: execute_js_scroll
+  - by: xpath
+    locator: '//*[@class="icon-add ivu-icon ivu-icon-ios-add-circle"]'
+    action: move_to_ele
+  - by: xpath
+    locator: sleep
+    action: 1
+  - by: xpath
+    locator: '//*[@class="survey-item-menu"]/*[contains(text(),"主觀題")]'
+    action: wait_click
+#選擇“主觀題”
+  - by: xpath
+    locator: '//*[@class="survey-item-menu"]/*[contains(text(),"主觀題")]'
+    action: click
+
+mult:
+  - by: xpath
+    locator: '//*[contains(text(),"多選題")]'
+    action: eles
+
+required:
+  - by: xpath
+    locator: '//*[contains(text(),"必答題")]//input'
+    action: eles
+
+click_save_draft:
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-default"]/span'
+    action: click
+
+get_save_draft_toast:
+#獲取保存草稿成功元素
+  - by: xpath
+    locator: '//*[@class="ivu-message-custom-content ivu-message-success"]/span'
+    action: ele_status
+
+click_next:
+  - by: xpath
+    locator: '//*[@class="step-btn we-p-big ivu-btn ivu-btn-default"]/span[contains(text(),"下一步")]'
+    action: click

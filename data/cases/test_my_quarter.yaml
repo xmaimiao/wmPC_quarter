@@ -1,0 +1,21 @@
+test_reply_quarter:
+   - {quarter_name: "2021年01月06日2021/01/06停止發佈測試672",
+       subject: [ {subject_num: 1,is_choice: True,is_single: True,
+                   options: [{item_num: 4,is_other: True,content: "測試數據"},] },
+                  {subject_num: 2,is_choice: True,is_single: False,
+                   options: [{item_num: 1,is_other: False,content: "測試數據"},
+                             {item_num: 2,is_other: False,content: "測試數據"},
+                             {item_num: 3,is_other: False,content: "測試數據"},
+                             {item_num: 4,is_other: True,content: "測試數據"},
+                   ] },
+                  {subject_num: 3,is_choice: True,is_single: False,
+                   options: [{item_num: 1,is_other: False,content: "測試數據"},
+                             {item_num: 2,is_other: False,content: "測試數據"},
+                             {item_num: 3,is_other: False,content: "測試數據"},
+                             {item_num: 4,is_other: True,content: "測試數據"},
+                   ] },
+                  {subject_num: 4,is_choice: False,text: "測試數據text"},
+       ]}
+
+test_simple_search:
+  - { keys:{quarter_type: "全部",quarter_name: "問卷統計測試",}}

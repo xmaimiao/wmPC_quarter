@@ -1,0 +1,98 @@
+test_stop_publishing_for_name:
+  - { keys:{quarter_type: "全部",quarter_name: "Google ChromeChrome至學生,教職工，外部人員219",},
+      expect: "停止發佈"}
+
+test_edit_endtime:
+  - { keys:{quarter_type: "全部",quarter_name: "Google ChromeChrome至學生,教職工，外部人員219",},
+      enddate: "2021/02/26",
+      endtime: "22:00",}
+
+test_copy_quarter:
+#  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員809",},
+#      quarter_name: 旅游调查,
+#      range_t: { input: True, staffNo: False, staff: "test401" },
+#      enddate: "2021/02/23",
+#      endtime: "21:00",
+#      cycle: { cycle1: "每天", cycle2: "僅一次" },
+#  }
+
+#     bug29086单词和版本号不能拆开换行，要在同一行显示
+  - { keys:{quarter_type: "全部",quarter_name: "Google ChromeChrome至學生,教職工，外部人員219",},
+      quarter_name: "Google ChromeChrome至",
+      range_t: { input: True, staffNo: False, staff: "test401" },
+      enddate: "2021/02/26",
+      endtime: "21:36",
+      cycle: { cycle1: "每天", cycle2: "僅一次" },
+  }
+
+test_stop_and_copy_edit_endtime:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生、教師、外部人員816",},
+      quarter_name: 旅游调查,
+      enddate: "2021/02/23",
+      endtime: "20:32",
+      cycle: { cycle1: "每天", cycle2: "僅一次" },
+  }
+
+test_stop_and_edit_endtime:
+  - { keys:{quarter_type: "全部",quarter_name: "Google ChromeChrome至學生,教職工，外部人員219",},
+      enddate: "2021/02/26",
+      endtime: "16:10",
+  }
+
+test_relseased_not_edit:
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員898",}}
+
+test_creat_quarter_base:
+   - { mult_re1: { required: True, mult: True },
+       mult_re2: { required: False, mult: True },
+       mult_re3: { required: False, mult: False },
+       mult_re4: { required: True, mult: False },
+       quarter_name: "旅游调查",
+       quarter_remark: "您好，我们是XXX，我们正在进行一项关于旅游的调查，想邀请您用几分钟时间帮忙填答这份问卷。本问卷实行匿名制，所有数据只用于统计分析， 请您放心填写。题目选项无对错之分，请您按自己的实际情况填写。谢谢您的帮助！",
+       subject_name1: "请问您最近3个月是否有出游计划？",
+       option_list1: [ { item: "是", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "否", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } , ],
+       subject_name2: "请问您计划什么时间旅游？",
+       option_list2: [ { item: "周末", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} },
+                       { item: "节假日", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "平时", is_img: False,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "其他", is_img: False,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} }  ],
+       subject_name3: "请问您这次出行的原因是？",
+       option_list3: [ { item: "公务出差", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "家庭外出", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "单位奖励旅游", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "探亲", is_img: True,is_other: False,tips: {switch: True,option_tips: "該項需要符合史實"} } ,
+                       { item: "其他", is_img: True,is_other: True,tips: {switch: True,option_tips: "該項需要符合史實"} } ],
+
+       subjective_name1: "请使用三目运算符描述以下代码：If(a0){B=1;}eles{B=2;}",
+       tips1: { switch: False, text: "舉例説明" },
+       words1: { switch: True, text: 200},
+
+       quarter_type: { type1: "限定人群", type2: "不限人群" },
+       range_t: { input: True, staffNo: False, staff: "test41-test" },
+       excel_path: D:\PycharmProjects\wmPC_quarter\excel\staff_user.slxs,
+       group_list: ["大學基金會","大學校董會",],
+       range_s: {
+         input: True, staffNo: False,
+         staff: "student3-test" },
+
+       student_multi_cond: {
+           college: { switch: True,value: [ "中醫藥學院", ] },
+           major: { switch: True,value: [ "工商管理學士學位", ], },
+           program: { switch: True,value: [ "工商管理學士學位", ] },
+           term: { switch: True,value: [ "1809", ] },
+           student_type: { switch: True,value: [ "本科", ] },
+           student_status: { switch: True,value: [ "在讀生-ACTIVE", "已轉系生-CHANGED", ] },
+           acco_type: { switch: True,value: [ "住宿生", ] },
+       },
+
+       excel_path_s: D:\PycharmProjects\wmPC_quarter\excel\staff_user_s.slxs,
+       outsider_path: D:\PycharmProjects\wmPC_quarter\excel\outsider_import_template2,
+       admin: ["test41-test"],
+     #    日期和時間寫在引號中，否則可能出錯
+       startdate: "2020-12-22",
+       starttime: "08:30",
+       enddate: "2021-01-20",
+       endtime: "15:00",
+       cycle: { cycle1: "每天", cycle2: "僅一次" },
+   }

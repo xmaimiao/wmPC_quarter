@@ -1,0 +1,58 @@
+subject_name:
+  - by: xpath
+    locator: '//*[@class="survey-item-content-edit"]//label[text()="標題"]/../div//input'
+    action: wait
+  - by: xpath
+    locator: '//*[@class="survey-item-content-edit"]//label[text()="標題"]/../div//input'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="survey-item-content-edit"]//label[text()="標題"]/../div//input'
+    action: send
+    value: ${subject_name}
+
+get_item_eles:
+  - by: xpath
+    locator: '//*[@class="ivu-input ivu-input-default"]'
+    action: eles
+
+get_other_eles:
+  - by: xpath
+    locator: '//*[@class="ivu-checkbox-input"]'
+    action: eles
+
+get_tips_eles:
+  - by: xpath
+    locator: '//*[@class="cell-choice-description mx-10"]'
+    action: eles
+
+input_options_tips:
+#輸入選項説明
+  - by: xpath
+    locator: '//*[@class="hint"]/..//input'
+    action: click
+  - by: xpath
+    locator: '//*[@class="hint"]/..//input'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="hint"]/..//input'
+    action: send
+    value: ${option_tips}
+#點擊確認按鈕
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-primary"]/span'
+    action: click
+
+get_img_eles:
+  - by: xpath
+    locator: '//*[@class="cell-upload-img mx-10"]'
+    action: eles
+
+get_add_eles:
+  - by: xpath
+    locator: '//*[@class="option"]//*[@class="icon-add ivu-icon ivu-icon-ios-add-circle-outline"]'
+    action: eles
+
+click_save:
+  - by: xpath
+    locator: '//*[@class="we-p-big ivu-btn ivu-btn-primary"]/span'
+    action: click

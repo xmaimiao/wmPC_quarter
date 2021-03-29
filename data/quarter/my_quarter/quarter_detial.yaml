@@ -1,0 +1,46 @@
+choice_option:
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[${subject_num}]//*[@class="o-item"][${item_num}]//input[@class="ivu-radio-input"]'
+    action: click
+
+choice_mult_option:
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[${subject_num}]//*[@class="o-item"][${item_num}]//input[@class="ivu-checkbox-input"]'
+    action: click
+
+
+input_content:
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[${subject_num}]//*[@class="o-item"][${item_num}]//input[@class="ivu-input ivu-input-default"]'
+    action: wait
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[${subject_num}]//*[@class="o-item"][${item_num}]//input[@class="ivu-input ivu-input-default"]'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[${subject_num}]//*[@class="o-item"][${item_num}]//input[@class="ivu-input ivu-input-default"]'
+    action: send
+    value: ${content}
+
+subjective_input:
+#  - by: xpath
+#    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[${subject_num}]
+#    //*[@class="o-item"][${item_num}]//input[@class="ivu-input ivu-input-default"]'
+#    action: wait
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[4]//textarea[@class="ivu-input"]'
+    action: clear
+  - by: xpath
+    locator: '//*[@class="ivu-form ivu-form-label-right"]/div[4]//textarea[@class="ivu-input"]'
+    action: send
+    value: ${text}
+
+click_save:
+  - by: xpath
+    locator: '//*[@class="we ivu-btn ivu-btn-primary"]/span'
+    action: click
+
+click_close:
+  - by: xpath
+    locator: '//*[@class="ivu-icon ivu-icon-md-close"]'
+    action: click
+

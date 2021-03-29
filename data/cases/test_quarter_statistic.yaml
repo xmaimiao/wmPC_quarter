@@ -1,0 +1,15 @@
+test_get_releasedrange:
+#  - { keys:{quarter_type: "草稿",quarter_name: "2021/01/13旅游调查測試停止發佈，勿動796",}}
+  - { keys:{quarter_type: "全部",quarter_name: "旅游调查學生,教職工，外部人員809",} }
+
+test_advanced_search:
+  - { keys:
+        {startTime: { switch: False,value: "2020/01/05" },endStartTime: { switch: False,value: "2020/01/05" },
+         startPlanExpireTime: { switch: False,value: "2020/01/05" },endPlanExpireTime: { switch: False,value: "2020/01/05" },
+         startFinishedNumber: { switch: True,value: 1 },endFinishedNumber: { switch: False,value: 0 },
+         startPushNumber: { switch: False,value: 0 },endPushNumber: { switch: False,value: 0 },
+         title: { switch: False,value: 學生 },
+         frequency: { switch: False,value: 每天 },
+         peopleOriented: { switch: False,value: 限定人群 },
+         status: { switch: True,value: 已結束 },}
+  }
